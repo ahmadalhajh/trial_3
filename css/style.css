@@ -17,9 +17,49 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
-/*
-    NavBar
-*/
+#navbar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#navbar .navbar-header {
+    padding: 20px;
+    background: #6d7fcc;
+    text-align: center;
+}
+
+#navbar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#navbar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#navbar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #fff;
+}
+#navbar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#navbar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
 
 .header {
     padding: 30px;
@@ -33,3 +73,20 @@ a, a:hover, a:focus {
     padding-left: 10px;
     
 }
+
+@media only screen and (max-width: 815px) 
+{ /* For mobile phones: */ 
+    
+.box{ display: inline-block; 
+    float: right; 
+    width: 95%; 
+    margin: 2.5%;}
+
+    
+    
+#projects{ 
+    height: 1000px; 
+}} 
+        
+        
+@media only screen and (max-width: 367px){}
